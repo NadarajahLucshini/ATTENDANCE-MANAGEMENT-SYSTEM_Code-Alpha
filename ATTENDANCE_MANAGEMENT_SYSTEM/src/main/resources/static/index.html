@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Attendance Management System</h1>
+    <div>
+        <h2>Students</h2>
+        <form id="studentForm">
+            <input type="text" id="studentName" placeholder="Name" required>
+            <input type="email" id="studentEmail" placeholder="Email" required>
+            <button type="submit">Add Student</button>
+        </form>
+        <ul id="studentList"></ul>
+    </div>
+
+    <div>
+        <h2>Register Attendance</h2>
+        <form id="attendanceForm">
+            <select id="studentSelect" required></select>
+            <input type="date" id="attendanceDate" required>
+            <label>
+                <input type="checkbox" id="attendancePresent"> Present
+            </label>
+            <button type="submit">Register Attendance</button>
+        </form>
+        <ul id="attendanceList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
